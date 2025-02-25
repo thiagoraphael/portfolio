@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+@keyframes passando {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes mouse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-5%);
+    color: #adfdd8;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #191830;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.7s;
+}
+
+a {
+  text-decoration: none;
+  color: #F3F3F3;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3vw 5vw 1vw 5vw;
+  font-weight: 100;
+}
+
+#codeby {
+  color: #82FC79;
+}
+
+#codeby:hover {
+  color: #B362DE;
+  font-weight: 800;
+  animation: mouse 0.1s linear infinite;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 2vw;
+  color: #F3F3F3;
+}
+
+.menu-item:hover{
+    font-weight: 700;
+    border-bottom: 1px solid #82FC79;
+}
+
+.texto-grande {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#nome {
+  display: inline-block;
+  color: #B362DE;
+  font-size: 70vh;
+  font-weight: 700;
+  animation: passando 100s linear infinite;
+}
+
+#nome:hover{
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+  #nome{
+    font-size: 50vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+  
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #191830;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.7s;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  
+}
+
+@media only screen and (min-width: 600px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #foto-perfil{
+    height: 35vh;
+  }
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3vw 5vw 1vw 5vw;
+  font-weight: 100;
+}
+
+#codeby a{
+  color: #F3F3F3;
+}
+
+#codeby a:hover {
+  color: #82FC79;
+  font-weight: 800;
+}
+
+.menu{
+  display: flex;
+  gap: 2vw;
+}
+
+.menu a{
+  color: #F3F3F3;
+}
+
+.menu-item:hover{
+    font-weight: 700;
+    border-bottom: 1px solid #82FC79;
+}
+
+#foto-perfil{
+  height: 45vh;
+}
+
+#foto-perfil:hover{
+  opacity: 90%;
+}
+
+#nome{
+  color: #F3F3F3;
+  font-size: 3vh;
+}
+
+.foto-nome{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#foto-perfil{
+  height: 35vh;
+}
+
+.apresentacao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1% 5vw 5vw 5vw;
+  font-weight: 100;
+}
+
+.apresentacao-texto{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.apresentacao-texto p{
+  color: #F3F3F3;
+  font-size: 12pt;
+}
+
+#retangulo{
+  height: 20px;
+  fill: #F3F3F3;
+  animation: flickerAnimation 1s infinite;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.links{
+  display: flex;
+  gap: 20px;
+}
+
+.links-svg{
+  height: 30px;
+  fill: #F3F3F3;
+}
+
+.links a:hover{
+  opacity: 70%;
+  margin: 10px 0px 0 0;
+}

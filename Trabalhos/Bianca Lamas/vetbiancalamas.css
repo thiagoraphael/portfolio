@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+@keyframes mouse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-5%);
+    color: #adfdd8;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #191830;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.7s;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 5vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3vw 5vw 1vw 5vw;
+  font-weight: 100;
+  position: fixed;
+  width: 90%;
+  border-bottom: 1px solid #82FC79;
+}
+
+#codeby a{
+  color: #F3F3F3;
+}
+
+#codeby a:hover {
+  color: #82FC79;
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  gap: 2vw;
+  color: #F3F3F3;
+}
+
+.menu-item:hover{
+    font-weight: 700;
+    border-bottom: 1px solid #82FC79;
+}
+
+.marquee {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.titulo-descricao{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2% 5% 2% 5%;
+}
+
+.titulo{
+  color: #B362DE;
+}
+
+.descricao{
+  color: #F3F3F3;
+}
+
+.imagens{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2% 5% 2% 5%;
+  gap: 10PX;
+}
